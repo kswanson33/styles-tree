@@ -1,0 +1,23 @@
+{
+  "name": "stylish",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "K.C. Swanson",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "css-tree": "^2.3.1",
+    "postcss": "^8.4",
+    "stylelint": "^14.5.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-no-px": "^1.0.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@digitak/esrun": "^3.2.26",
+    "fs": "^0.0.1-security",
+    "get-current-line": "^7.2.0",
+    "prettier": "^3.1.1",
+    "source-map-support": "^0.5.21"
+  }
+}
