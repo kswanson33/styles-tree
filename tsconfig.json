@@ -2,7 +2,7 @@
   "compilerOptions": {
     "inlineSourceMap": true
   },
-  "files": [
-    "lib/test.ts"
+  "include": [
+    "lib/**/*"
   ]
 }
