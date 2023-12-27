@@ -1,0 +1,31 @@
+div > p {
+  border: 1px solid green;
+}
+div {
+  border: 1px solid blue;
+}
+body {
+  line-height: 1.5rem;
+  font-family: serif;
+  border: 1px solid red;
+}
+div > p {
+  border: 1px solid green;
+}
+div {
+  border: 1px solid blue;
+}
+div > p {
+  border: 1px solid green;
+}
+div {
+  border: 1px solid blue;
+}
+div > p {
+  border: 1px solid green;
+}
+div {
+  border: 1px solid blue;
+}
+
+/*# sourceMappingURL=./example-two.css.map */
