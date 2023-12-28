@@ -1,11 +1,11 @@
 import * as csstree from 'css-tree';
 import { PropertySetPlaceholder } from './propertySet';
-import { RuleSet } from './types';
+import { RuleSet, SourceInfo } from './types';
 
 export type FeaturePlaceholder = {
   subselector: String,
   properties: PropertySetPlaceholder,
-  source_info: any, // TODO
+  source_info: SourceInfo,
   children: Array<FeaturePlaceholder>
 }
 

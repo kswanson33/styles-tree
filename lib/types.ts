@@ -6,3 +6,5 @@ export type Rule = {
 }
 
 export type RuleSet = Array<Rule>; // TODO: rename
+
+export type SourceInfo = { file: string, line: number, char: number }
