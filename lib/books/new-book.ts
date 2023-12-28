@@ -4,7 +4,7 @@ import { includeFeature, writeBookCss } from '../book';
 
 console.log("****Begin Book****");
 const exampleBook = {
-  name: 'example-two',
+  name: 'example',
   rules: []
 };
 
