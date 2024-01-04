@@ -4,13 +4,9 @@ import { PropertySetPlaceholder } from '../propertySet';
 import getCurrentLine from 'get-current-line';
 require('source-map-support').install();
 
-let rootProps: PropertySetPlaceholder = { parsable:
-  "{ border: 1px solid blue; }"
-}
+let rootProps: PropertySetPlaceholder = { border: '1px solid blue' };
 
-let leafProps: PropertySetPlaceholder = { parsable:
-  "{ border: 1px solid green; }"
-}
+let leafProps: PropertySetPlaceholder = { border: '1px solid green' };
 
 let twoPartFeature: FeaturePlaceholder = {
   subselector: 'div',

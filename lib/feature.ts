@@ -1,5 +1,5 @@
 import * as csstree from 'css-tree';
-import { PropertySetPlaceholder } from './propertySet';
+import { PropertySetPlaceholder, styleToString } from './propertySet';
 import { RuleSet, SourceInfo } from './types';
 
 export type FeaturePlaceholder = {
@@ -15,15 +15,15 @@ export type FeaturePlaceholder = {
 // TODO: better name
 const visitFeature = (feature: FeaturePlaceholder, parent_selector: String, ruleArr: Array<any>): void => {
   const selector = `${parent_selector}${feature.subselector}`
-  const property_string = feature.properties.parsable
-  console.log(`${selector} ${property_string}`);
+  const properties: String = styleToString(feature.properties)
+  console.log(`${selector} ${properties}`);
   // visit children
   for (let index in feature.children) {
     visitFeature(feature.children[index], selector, ruleArr); // TODO: where to send the returned value?
   }
   // parse current node
   ruleArr.push(csstree.parse(
-    `${selector} ${property_string}`,
+    `${selector} ${properties}`,
     {
       context: 'rule', positions: 'true',
       filename: feature.source_info.file,
