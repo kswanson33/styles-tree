@@ -1,6 +1,6 @@
-import { bookRootRules } from "../features/bookRootFeature";
-import { twoPartRules } from "../features/twoPartFeature";
 import { includeFeature, writeBookCss } from '../book';
+import { figureRules } from "../features/figureFeature";
+import { cardboardFontImports } from "../themes/cardboard/typography";
 
 console.log("****Begin Book****");
 const exampleBook = {
@@ -8,8 +8,7 @@ const exampleBook = {
   rules: []
 };
 
-includeFeature(exampleBook, twoPartRules);
-includeFeature(exampleBook, bookRootRules);
+includeFeature(exampleBook, cardboardFontImports);
+includeFeature(exampleBook, figureRules);
 
 writeBookCss(exampleBook);
-
